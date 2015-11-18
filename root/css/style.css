@@ -1,0 +1,98 @@
+@charset "utf-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, dl, dt, dd, strong, em, img, table, tr, th, td, iframe, address, cite, code, q, form, header, footer, nav, section, article, aside, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  word-break: normal;
+  word-wrap: break-word;
+}
+body {
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  color: #333;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  font-size: 64%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  vertical-align: super;
+}
+sub {
+  vertical-align: sub;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+img {
+  vertical-align: bottom;
+}
+area {
+  outline: none;
+}
+ul, ol {
+  list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, strong {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-decoration: underline;
+}
+.cboth {
+  clear: both;
+  height: 0;
+}
+
+/* IE 用▼ */
+
+* html .cboth {
+  height: .1em;
+  overflow: hidden;
+  margin-top: -.1em;
+}
+hr {
+  visibility: hidden;
+  border: 0;
+}
+
+/* clearfix */
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
